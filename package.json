@@ -1,0 +1,9 @@
+{
+  "name": "shark-car",
+  "version": "1.0.0",
+  "private": true,
+  "description": "O‘zbek tilidagi SHARK CAR avtomobil qidirish prototipi",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

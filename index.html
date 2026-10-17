@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="SHARK CAR’da avtomobillarni ko‘ring, taqqoslang va sevimlilar ro‘yxatiga saqlang.">
+  <title>SHARK CAR — O‘zingizga mos avtomobilni toping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="vehicle-data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="SHARK CAR bosh sahifa"><span class="brand-mark">S</span><span>SHARK<span class="brand-light">CAR</span><i>.</i></span></a>
+      <button class="menu-toggle" type="button" aria-label="Menyuni ochish" aria-expanded="false"><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Asosiy menyu">
+        <a href="#home" data-nav="home">Bosh sahifa</a>
+        <a href="#catalog" data-nav="catalog">Avtomobillar</a>
+        <a href="#compare" data-nav="compare">Taqqoslash <span class="nav-count" id="compare-count">0</span></a>
+        <a href="#favorites" data-nav="favorites">Sevimlilar <span class="nav-count" id="favorite-count">0</span></a>
+      </nav>
+      <a class="header-cta" href="#contact">Bog‘lanish <span aria-hidden="true">↗</span></a>
+      <a class="admin-shortcut" href="#admin" aria-label="Admin paneliga kirish" title="Admin paneli"><span aria-hidden="true">⚙</span><span class="admin-shortcut-label">Admin</span><span class="admin-inquiry-count" id="admin-inquiry-count" hidden>0</span></a>
+    </header>
+
+    <main id="app" tabindex="-1" aria-live="polite">
+      <section class="loading-screen"><span class="loader"></span><p>Sahifa yuklanmoqda…</p></section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">S</span><span>SHARK<span class="brand-light">CAR</span><i>.</i></span></a>
+      <p>O‘zingizga mos avtomobilni topishning qulay yo‘li.</p>
+      <div class="footer-links"><a href="#catalog">Avtomobillar</a><a href="#contact">Aloqa</a><a href="#admin">E’lonlarni boshqarish</a></div>
+      <div class="footer-socials" aria-label="Ijtimoiy tarmoqlar"><a href="https://t.me/jamwidbek_official" target="_blank" rel="noopener noreferrer">Telegram <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/js_muxandis/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a></div>
+      <small>© <span id="year"></span> SHARK CAR · Namuna e’lonlar va taxminiy narxlar. Sayt egasi: Jamshidbek (@js_muxandis).</small>
+    </footer>
+  </div>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
